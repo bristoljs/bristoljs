@@ -6,11 +6,20 @@
         <h5>We host monthly JavaScript meetings in the beautiful city of Bristol, UK.</h5>
       </div>
       <div class="col-lg-8 col-lg-offset-2 himg">
-        {% for talk in site.categories['talk'] %}
-          <hr>
-          <h3>{{ talk.title }}</h3>
-          <h5>{{ talk.date | date: "%-d %B %Y" }} - by {{ talk.speaker }} at {{ talk.venue }}</h5>
-          <a href="{{ talk.url | prepend: site.baseurl }}" class="btn btn-primary">RSVP Now</a>
+        {% assign time_now = site.time | date: '%s' %}
+        {% assign show_rsvp_button = true %}
+
+        {% for event in site.categories['event'] reversed %}
+          {% assign time_event = event.date | date: '%s' %}
+          {% if time_event >= time_now %}
+            <hr>
+            <h3>{{ event.title }}</h3>
+            <h5>{{ event.date | date: "%-d %B %Y" }} - by {{ event.speaker }} at {{ event.venue }}</h5>
+            {% if show_rsvp_button %}
+              <a href="{{ event.url | prepend: site.baseurl }}" class="btn btn-primary">RSVP Now</a>
+              {% assign show_rsvp_button = false %}
+            {% endif %}
+          {% endif %}
         {% endfor %}
       </div>
     </div><!-- /row -->
