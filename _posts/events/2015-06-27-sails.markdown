@@ -1,0 +1,10 @@
+---
+layout:  event
+title:   "sails.js"
+date:    2015-05-27
+speaker: Andrew McGregor
+venue:   CX Partners
+categories:
+- event
+---
+To get to the other side.
