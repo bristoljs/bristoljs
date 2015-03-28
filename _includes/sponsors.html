@@ -1,0 +1,18 @@
+<div id="cwrap">
+  <div class="container">
+    <div class="row centered">
+      <h3>OUR SPONSORS</h3>
+      {% for sponsor in site.sponsors %}
+        <div class="col-sm-12 col-md-4">
+          <div class="row centered">
+            <div class="col-sm-8 col-sm-offset-2 centered">
+              <a href="{{ sponsor.url }}">
+                <img src="{{ "/assets/img/sponsors/" | prepend: site.baseurl }}{{ sponsor.img }}" class="img-responsive">
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

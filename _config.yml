@@ -28,3 +28,14 @@ social:
     url: http://meetup.com/BristolJS/
   - title: twitter
     url: http://twitter.com/bristoljs
+
+sponsors:
+  -
+    img: just-eat.png
+    url: http://just-eat.co.uk/
+  -
+    img: basekit.png
+    url: http://www.basekit.com/
+  -
+    img: cx-partners.png
+    url: http://www.cxpartners.co.uk/
