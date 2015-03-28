@@ -29,22 +29,27 @@ permalink: /
 </div><! --/service -->
 
 <div class="container mtb">
-    <div class="row">
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
+  <div class="row">
+    <div class="col-xs-12 col-lg-6">
+      <h4>Frequently Asked</h4>
+      <div class="hline"></div>
+      {% for question in site.categories['question'] %}
+        <h4><a data-toggle="collapse" href="#question-{{forloop.index}}" aria-expanded="false" aria-controls="question-{{forloop.index}}">
+          {{ question.title }}
+        </a></h4>
+        <div class="collapse" id="question-{{forloop.index}}">
+          <div>{{ question.content }}</div>
         </div>
+      {% endfor %}
+    </div>
 
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %}
-        </div>
+    <div class="col-lg-6">
+      <h4>Latest Posts</h4>
+      <div class="hline"></div>
+      {% for post in site.categories['blog'] limit:5 %}
+      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+      {% endfor %}
+    </div>
 
-    </div><! --/row -->
-</div><! --/container -->
+  </div>
+</div>
