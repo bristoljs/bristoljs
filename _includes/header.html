@@ -7,17 +7,21 @@
       </div>
       <div class="col-lg-8 col-lg-offset-2 himg">
         {% assign time_now = site.time | date: '%s' %}
-        {% assign show_rsvp_button = true %}
+        {% assign first_loop = true %}
 
         {% for event in site.categories['event'] reversed %}
           {% assign time_event = event.date | date: '%s' %}
           {% if time_event >= time_now %}
             <hr>
-            <h3>{{ event.title }}</h3>
+            {% if first_loop %}
+              <h3><a href="{{ event.meetup }}">{{ event.title }}</a></h3>
+            {% else %}
+              <h4><a href="{{ event.meetup }}">{{ event.title }}</a></h4>
+            {% endif %}
             <h5>{{ event.date | date: "%-d %B %Y" }} - by {{ event.speaker }} at {{ event.venue }}</h5>
-            {% if show_rsvp_button %}
-              <a href="{{ event.url | prepend: site.baseurl }}" class="btn btn-primary">RSVP Now</a>
-              {% assign show_rsvp_button = false %}
+            {% if first_loop %}
+              <a href="{{ event.meetup }}" class="btn btn-primary">RSVP Now</a>
+              {% assign first_loop = false %}
             {% endif %}
           {% endif %}
         {% endfor %}
