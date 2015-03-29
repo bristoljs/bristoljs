@@ -4,51 +4,34 @@ title: Contact
 permalink: /contact/
 ---
 
-<div id="contactwrap"></div>
-
 <div class="container mtb">
-    <div class="row">
-        <div class="col-lg-8">
-            <h4>Just Get In Touch!</h4>
-            <div class="hline"></div>
-                <p>{{ site.about }}</p>
-                <form role="form" action="//formspree.io/adam@lab.io" method="POST">
-                  <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="_subject">Subject</label>
-                    <input type="text" class="form-control" id="_subject" name="_subject">
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                  </div>
-
-                  <input type="text" name="_gotcha" style="display:none" />
-
-                  <button type="submit" class="btn btn-theme">Submit</button>
-                </form>
-        </div><! --/col-lg-8 -->
-
-        <div class="col-lg-4">
-            <h4>Our Address</h4>
-            <div class="hline"></div>
-                <p>
-                    {% for line in site.address.first.lines %}
-                        {{ line }} <br>
-                    {% endfor %}
-                </p>
-                <p>
-                    Email: {{ site.email }}<br/>
-                    Tel: {{ site.tel }}
-                </p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+  <div class="row">
+    <div class="col-lg-12">
+      <h4>Just Get In Touch!</h4>
+      <div class="hline"></div>
+      <p>{{ site.about }}</p>
+      <form role="form" action="//formspree.io/adam@lab.io" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name">
         </div>
-    </div><! --/row -->
-</div><! --/container -->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="_subject">Subject</label>
+          <input type="text" class="form-control" id="_subject" name="_subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <button type="submit" class="btn btn-theme">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
