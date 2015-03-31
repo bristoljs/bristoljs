@@ -530,3 +530,8 @@ a.anchor{
     top: -80px;
     visibility: hidden;
 }
+
+.loading {
+  background-image: url(/assets/img/loading.gif);
+  background-position: center;
+}
