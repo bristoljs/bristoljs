@@ -1,8 +1,8 @@
 ---
 layout:  event
-title:   "sails.js"
+title:   "Next-level Functional Programming with Ramda"
 date:    2015-05-27
-speaker: Andrew McGregor
+speaker: Warren
 venue:   CX Partners
 meetup:  http://www.meetup.com/BristolJS/events/219713452/
 categories:
