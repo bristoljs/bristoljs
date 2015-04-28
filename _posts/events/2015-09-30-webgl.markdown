@@ -1,0 +1,10 @@
+---
+layout:  event
+title:   WebGL
+date:    2015-09-30
+speaker: Mark Lundin
+venue:   Basekit
+meetup:  http://www.meetup.com/BristolJS/events/221885213/
+categories:
+- event
+---
