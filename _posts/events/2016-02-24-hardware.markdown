@@ -1,0 +1,10 @@
+---
+layout:  event
+title:   Hardware Hacking
+date:    2016-02-24
+speaker: Gordon Williams & Adam Butler
+venue:   JustEat
+meetup:  http://www.meetup.com/BristolJS/events/224723406/
+categories:
+- event
+---

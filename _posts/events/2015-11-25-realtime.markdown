@@ -1,0 +1,10 @@
+---
+layout:  event
+title:   Real-Time Web Apps in 2015 & Beyond
+date:    2015-11-25
+speaker: Phil Leggetter
+venue:   CX Partners
+meetup:  http://www.meetup.com/BristolJS/events/222783993/
+categories:
+- event
+---

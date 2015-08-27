@@ -3,7 +3,7 @@ layout:  event
 title:   JSPM & ES6
 date:    2015-10-28
 speaker: Benjamin Reid
-venue:   Engine Shed
+venue:   Just Eat
 meetup:  http://www.meetup.com/BristolJS/events/222067492/
 categories:
 - event
