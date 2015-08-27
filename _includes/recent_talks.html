@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    {% for event in site.categories['event'] reversed %}
+    {% for event in site.categories['event'] %}
       {% assign time_event = event.date | date: '%s' %}
       {% if time_event <= time_now %}
         {% for talk in event.talks %}
