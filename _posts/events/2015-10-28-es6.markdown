@@ -7,4 +7,9 @@ venue:   Just Eat
 meetup:  http://www.meetup.com/BristolJS/events/222067492/
 categories:
 - event
+talks:
+  -
+    title: "ES6 & JSPM"
+    speaker: "Ben Reid"
+    video_embed_link: https://www.youtube.com/embed/mIBqsXLXmc0
 ---
