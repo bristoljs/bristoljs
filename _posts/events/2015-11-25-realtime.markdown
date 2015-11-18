@@ -1,9 +1,9 @@
 ---
 layout:  event
-title:   Real-Time Web Apps in 2015 & Beyond
+title:   Real-Time Web & Visualising Runkeeper Data
 date:    2015-11-25
-speaker: Phil Leggetter
-venue:   CX Partners
+speaker: Phil Leggetter & Ben Foxall
+venue:   Just Eat
 meetup:  http://www.meetup.com/BristolJS/events/222783993/
 categories:
 - event
