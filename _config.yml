@@ -33,6 +33,9 @@ social:
 
 sponsors:
   -
+    img: pusher.png
+    url: http://pusher.com/
+  -
     img: just-eat.png
     url: http://just-eat.co.uk/
   -
@@ -41,3 +44,6 @@ sponsors:
   -
     img: cx-partners.png
     url: http://www.cxpartners.co.uk/
+  -
+    img: deskbeers.jpg
+    url: https://www.deskbeers.com/
