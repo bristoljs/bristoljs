@@ -33,6 +33,12 @@ social:
 
 sponsors:
   -
+    img: novate.png
+    url: http://www.novate-it.co.uk/
+  -
+    img: potato.png
+    url: https://p.ota.to/
+  -
     img: pusher.png
     url: http://pusher.com/
   -
@@ -44,6 +50,3 @@ sponsors:
   -
     img: cx-partners.png
     url: http://www.cxpartners.co.uk/
-  -
-    img: deskbeers.jpg
-    url: https://www.deskbeers.com/
